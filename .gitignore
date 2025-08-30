@@ -1,0 +1,45 @@
+# Arquivos Python compilados
+__pycache__/
+*.py[cod]
+
+# Ambiente virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Arquivos de configuração e variáveis sensíveis
+*.env
+.env
+*.ini
+*.cfg
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Diretórios de IDEs
+.vscode/
+.idea/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de pacotes
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Arquivos de testes
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Arquivos de dependência
+pip-log.txt
+pip-delete-this-directory.txt
