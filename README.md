@@ -1,2 +1,2 @@
-# apostilas-pdf-automation
-Script em Python para gerar apostilas personalizadas a partir de planilhas XLSX.
+# terminal-pdf-generation-py
+Script em Python para gerar apostilas personalizadas a partir de planilhas XLSX via terminal.
