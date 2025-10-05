@@ -1,6 +1,7 @@
 # Arquivos Python compilados
 __pycache__/
 *.py[cod]
+*.pyc
 
 # Ambiente virtual
 venv/
