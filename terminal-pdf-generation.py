@@ -281,8 +281,9 @@ def stamp_pdf_coringa(src_pdf_path: Path, out_pdf_path: Path, text_line: str, fo
     print(f"[✔] PDF salvo: {out_pdf_path.name}")
 
 def main():
-    print("📄 Iniciando processo de geração de PDFs personalizados...\n")
-    print("📁 Certifique-se de que os arquivos 'modelo.pdf' e 'dados.xlsx' estão na mesma pasta deste script.\n")
+    print("👋 Bem-vindo ao Terminal PDF Generation | 🧑‍💻 Autor: Lazaroni Barros | 🧩 Versão: v2.0\n")
+    print("⚠️ Para interromper a execução com segurança, pressione Ctrl + C a qualquer momento.\n")
+    print("❗ Certifique-se de que estes arquivos estão na pasta raiz:📄 modelo.pdf e 📊 dados.xlsx.\n")
 
     # Entrada da sigla personalizada
     sigla = input("Informe a sigla utilizada pela apostila personalizada: ").strip().upper()
@@ -377,4 +378,9 @@ def main():
         sys.exit(1)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n🛑 Execução interrompida pelo usuário. Encerrando com segurança...\n")
+        sys.exit(0)
+
