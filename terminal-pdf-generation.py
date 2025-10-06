@@ -8,8 +8,9 @@ import re
 import string
 import sys
 import winsound
-from pathlib import Path
 
+from pyfiglet import Figlet
+from pathlib import Path
 from openpyxl import load_workbook
 from reportlab.pdfgen import canvas
 from reportlab.lib.colors import Color
@@ -281,7 +282,11 @@ def stamp_pdf_coringa(src_pdf_path: Path, out_pdf_path: Path, text_line: str, fo
     print(f"[✔] PDF salvo: {out_pdf_path.name}")
 
 def main():
-    print("👋 Bem-vindo ao Terminal PDF Generation | 🧑‍💻 Autor: Lazaroni Barros | 🧩 Versão: v2.0\n")
+    print("👋 Bem-vindo ao Terminal PDF Generation 🧩 v2.0 📞 Suporte: (85) 99943-7543\n")
+    
+    f = Figlet(font='slant')  # você pode trocar por 'standard', 'big', 'banner3-D', etc.
+    print(f.renderText('PDF Generation'))
+    
     print("⚠️ Para interromper a execução com segurança, pressione Ctrl + C a qualquer momento.\n")
     print("❗ Certifique-se de que estes arquivos estão na pasta raiz:📄 modelo.pdf e 📊 dados.xlsx.\n")
 
@@ -381,6 +386,6 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n🛑 Execução interrompida pelo usuário. Encerrando com segurança...\n")
+        print("\n\n🛑 Execução interrompida pelo usuário. Encerrando com segurança...\n")
         sys.exit(0)
 
