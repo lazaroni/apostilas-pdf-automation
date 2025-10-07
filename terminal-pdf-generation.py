@@ -291,10 +291,10 @@ def main():
     print("❗ Certifique-se de que estes arquivos estão na pasta raiz:📄 modelo.pdf e 📊 dados.xlsx.\n")
 
     # Entrada da sigla personalizada
-    sigla = input("Informe a sigla utilizada pela apostila personalizada: ").strip().upper()
+    sigla = input("1️⃣ Informe a sigla utilizada pela apostila personalizada: ").strip().upper()
 
     # Escolha da cor do texto
-    print("\nEscolha a cor do texto estampado no PDF:")
+    print("\n2️⃣ Escolha a cor do texto estampado no PDF:")
     print("1. Padrão Vermelho Claro")
     print("2. Cor personalizada")
     opcao_cor = input("Digite 1 ou 2: ").strip()
@@ -321,13 +321,13 @@ def main():
     CAMINHO_PADRAO_XLSX = RAIZ / "dados.xlsx"
 
     # Compatibilidade do PDF
-    print("\nVocê já possui um arquivo PDF compatível?")
+    print("\n3️⃣ Você já possui um arquivo PDF compatível?")
     print("1. Sim")
     print("2. Não")
     opcao_pdf_compativel = input("Digite 1 ou 2: ").strip()
 
     # Seleção do PDF-base
-    print("\nSelecione o arquivo PDF:")
+    print("\n4️⃣ Selecione o arquivo PDF:")
     print("1. Arquivo padrão (modelo.pdf)")
     print("2. Arquivo personalizado ou de fora da pasta raiz")
     opcao_pdf = input("Digite 1 ou 2: ").strip()
@@ -358,7 +358,7 @@ def main():
     opcao_tipo_pdf = input("Digite 1 ou 2: ").strip()
 
     if opcao_tipo_pdf == "1":
-        print("\nSelecione a planilha XLSX:")
+        print("\n5️⃣ Selecione a planilha XLSX:")
         print("1. Arquivo padrão (dados.xlsx)")
         print("2. Arquivo personalizado ou de fora da pasta raiz")
         opcao_xlsx = input("Digite 1 ou 2: ").strip()
